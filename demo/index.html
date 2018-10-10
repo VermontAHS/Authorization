@@ -166,15 +166,15 @@
     $.post(
       "http://localhost:3000/create",
       {
-        "firstName": $("#newFirstName").val(),
-        "lastName": $("#newLastName").val(),
+        "first_name": $("#newFirstName").val(),
+        "last_name": $("#newLastName").val(),
         "email": $("#newEmail").val(),
         "password": $("#newPassword").val(),
         "username": $("#newUsername").val()
       }
     ).done(function(data){
-      $("#results").clear();
-      $("#results").append("<div>"+data+"</div>");
+      $("#results").empty();
+      $("#results").append("<h2>Created User: "+JSON.stringify(data, null, 2)+"</h2>");
     });
   });
   $("#signInForm").submit(function(e){
@@ -186,8 +186,8 @@
         "password": $("#regPassword").val()
       }
     ).done(function(data){
-      $("#results").clear();
-      $("#results").append("<div>"+data+"</div>");
+      $("#results").empty();
+      $("#results").append("<pre>"+JSON.stringify(data, null, 2)+"</pre>");
     });
   });
 </script>

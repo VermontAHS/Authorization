@@ -9,7 +9,7 @@ exports.up = (knex, Promise) => {
     table.string('username');
     table.string('email');
     table.string('password');
-    table.timestamps();
+    table.timestamp('created_at').defaultTo(knex.fn.now());
   })
   .then(event => {
     console.log(event)

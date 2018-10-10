@@ -8,6 +8,10 @@ routes.delete('/delete/:id', middleware.deleteUser);
 
 routes.put('/update/:id', middleware.updateUser);
 
-routes.get('/:id', middleware.getUser);
+routes.get('/user/:id', middleware.getUser);
+
+routes.get('/users', middleware.getUsers);
+
+routes.post('/signin', middleware.signIn);
 
 module.exports = routes
