@@ -58,7 +58,6 @@
               </div>
               <div class="signUpBody">
                 <h2 style="margin-top: 0; padding-top: 25px;"> Sign Up</h2>
-                <div class="min"><img src="assets/img/pen.png" alt="pen"></div>
                 <div>
                   <form class="" id="signUpForm" action="index.html">
                     <div>
@@ -86,6 +85,7 @@
                     </div>
                   </form>
                 </div>
+                <div id="signupresults"></div>
               </div>
             </div>
             <div id="curCust" style="background:#fff" class="signUp large">
@@ -94,7 +94,6 @@
               </div>
               <div style="width:49%; margin-right:1%" class="signUpBody">
                 <h2>Sign in</h2>
-                <div class="min"><img src="assets/img/doctor.png" alt="doctor"></div>
                 <div>
                   <form class="" id="signInForm" action="index.html" method="">
                     <div>
@@ -113,7 +112,6 @@
               </div>
               <div class="signUpBody" id="results">
                 <h2>Results</h2>
-                <div class="min"><img src="assets/img/doctor.png" alt="megaphone"></div>
               </div>
             </div>
           </div>
@@ -125,7 +123,7 @@
  	  										Important Message: Vermont Health Connect's account log-ins will be unavailable from 8 p.m. EDT on Friday, August 10th until 8 a.m. EDT on Monday, August 13th due to a scheduled <a href="http://info.healthconnect.vermont.gov/maintenance" style="color:#FF9300"><u>system update</u>.</a>
  	  										The Plan Comparison Tool and resources in the Help Center will continue to be available without interruption.
               					</div-->
-	<div id="footer">
+	<div id="footer" style="margin-top: 4rem">
       <div class="row">
         <div class="container">
           <div class="col left">
@@ -173,8 +171,8 @@
         "username": $("#newUsername").val()
       }
     ).done(function(data){
-      $("#results").empty();
-      $("#results").append("<h2>Created User: "+JSON.stringify(data, null, 2)+"</h2>");
+      $("#signupresults").empty();
+      $("#signupresults").append("<h3>Welcome new user "+JSON.stringify(data, null, 2).slice(1, -1)+"!</h3>");
     });
   });
   $("#signInForm").submit(function(e){
@@ -187,7 +185,7 @@
       }
     ).done(function(data){
       $("#results").empty();
-      $("#results").append("<pre>"+JSON.stringify(data, null, 2)+"</pre>");
+      $("#results").append("<pre>"+JSON.stringify(data, null, 2).slice(1, -1)+"</pre>");
     });
   });
 </script>
