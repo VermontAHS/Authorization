@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html>
+<head>
+
+    <title>VHC Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="keywords" content="vermont health insurance exchange, vermont health insurance marketplace, health care reform law, vermont state health insurance, insurance navigator, vermont health insurance, Health insurance quotes, individual health insurance, VT Health Connect contact, VT Health Connect phone number">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <link href="css/LandingPages.css" rel="stylesheet" type="text/css"><!--Last years CSS -->
+    <link href="new_assets/css/new_style.css" rel="stylesheet" type="text/css"><!-- New one for 2016-->	
+    <link href="assets/style/css/style.css" type="text/css" rel="stylesheet">    		
+    <script type='text/javascript' src='assets/js/jquery-1.9.1-min.js'></script>     
+    
+	    <script type="text/javascript">
+			(function (i, s, o, g, r, a, m) {
+			      i['GoogleAnalyticsObject'] = r;
+			      i[r] = i[r] || function () {
+			          (i[r].q = i[r].q || []).push(arguments)
+			      }, i[r].l = 1 * new Date();
+			      a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+			      a.async = 1;
+			      a.src = g;
+			      m.parentNode.insertBefore(a, m)
+			  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			
+			  ga('create', 'UA-33924458-3', 'auto');
+			  ga('send', 'pageview');
+		</script>   
+	
+	
+</head>
+<body>
+	
+    <div id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col one left"><img src="assets/img/header_VHC_logo.png" alt="logo"></div>
+          <div class="col two right">
+            <div class="row">
+              <div class="col right">
+                <div class="col"><img src="assets/img/header_PhoneIcon.png" alt="Contact Us" class="headerIcon"></div>
+                <div class="headerText col"> <a href="http://info.healthconnect.vermont.gov/contact" style="color:#255953; text-decoration:underline; font-weight:600 ">Contact Us </a>
+                  <div class="row">
+                    <div style="width:75px" class="col">Call</div>
+                    <div class="col"><strong>855-899-9600</strong></div>
+                  </div>
+                  <div class="row">
+                    <div style="width:75px" class="col">TTY/TDD </div>
+                    <div class="col"><strong>888-834-7898</strong>		</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col right">
+	              <a href=" http://info.healthconnect.vermont.gov/contact" class="language">
+	              	<img src="assets/img/Globe.png" alt="globe" class="globe"><span>&nbsp; Languages</span>
+	              </a>
+              </div>
+            </div>
+            <div class="row">
+              <div style="width:100%" class="col right">
+                <ul class="nav">
+                  <li class="navLink"><a id="helpCentre" href="http://info.healthconnect.vermont.gov/">Help Center</a></li>
+                  <li class="navLink"><a id="findPlan" href="http://info.healthconnect.vermont.gov/healthplans">Health Plans</a></li>
+                  <li class="navLink"><a id="aboutUs" href="http://info.healthconnect.vermont.gov/About_Us">About VHC</a></li>
+                  <li class="navLink"><a id="newsAndEvents" href="http://info.healthconnect.vermont.gov/news">Latest Updates</a></li>
+                  <li class="navLink"><a id="faq" href="http://info.healthconnect.vermont.gov/faq">FAQ</a></li>
+                  <li style="margin-right:30px;" class="navLink"><a id="faq" href="http://info.healthconnect.vermont.gov/search/node">Search	</a></li>
+                  <li class="navLink login"><a href="https://portal.healthconnect.vermont.gov/VTHBEWeb/idProof.action?og_link=Family">Sign In</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+	
+    <div id="content">
+      <div class="container"><!-- Content -->
+        <div class="LandingPageContents">
+        <div class="LandingPageContents">
+	          <div id="welcomeCall">
+		 	            <h1>Welcome to Vermont Health Connect 
+		 	              <br><small>Vermont's Health Insurance MarketPlace</small>	
+		 	              	      <!--div style="font-size:20px"><br/>
+ 	  										Important Message: Vermont Health Connect's account log-ins will be unavailable from Thursday, September 13th, 9:00 p.m. EST until Friday, September 14th, 12:00 a.m. EST due to a 
+												<a href="http://info.healthconnect.vermont.gov/maintenance" style="color:#FF9300"><u>scheduled system update</u>.</a>
+												The Plan Comparison Tool and resources in the Help Center will continue to be available without interruption.
+              					</div-->   	  				  	   				 				  																	 		  								
+		 	            <!--<div style="font-size:20px"><br/>
+ 	  										Important Message: Vermont Health Connect's customer support center will be closed Monday, September 3rd for Labor Day. 
+ 	  										Members will still be able to sign on to report changes or make payments online, but will have to wait until Tuesday (8am-5pm) to speak to a representative.
+              					</div> 	-->	
+              					
+              		<div style="font-size:20px"><br/>
+              			2019 Open Enrollment runs from November 1st to December 15th. Plan Comparison Tool launches October 16th.	
+              		</div> 						
+ 	  						</h1> 
+	      		</div>        
+          <div id="CallToAction"> 
+            <div id="newCust" class="signUp">
+              <div class="signUpHeader">
+                <h1>New Customers</h1>
+              </div>
+              <div class="signUpBody">
+                <h2 style="margin-top: 0; padding-top: 25px;">Compare Plans <br> and Sign Up</h2>
+                <div class="min"><img src="assets/img/pen.png" alt="pen"></div>
+                <div style="padding-bottom:32px">    <a href="http://info.healthconnect.vermont.gov/Get_Started"><img src="assets/img/largerBut_06.png" alt="get started"></a></div>
+              </div>
+            </div>
+            <div id="curCust" style="background:#fff" class="signUp large">
+              <div class="signUpHeader">
+                <h1>Current Customers</h1>
+              </div>
+              <!--div style="width:49%; margin-right:1%" class="signUpBody">
+                <h2>Get the Most<br>Out of Your Coverage</h2>
+                <div class="min"><img src="assets/img/doctor.png" alt="doctor"></div>
+                <div style="padding-bottom:32px"> <a href="http://info.healthconnect.vermont.gov/value"><img src="assets/img/largerBut_03.png" alt="value"></a></div>
+              </div-->
+              <div style="width:49%; margin-right:1%" class="signUpBody">
+                <h2>Get the Most Out<br>of Your Coverage</h2>
+                <div class="min"><img src="assets/img/doctor.png" alt="doctor"></div>
+                <div style="padding-bottom:32px"> <a href="http://info.healthconnect.vermont.gov/Learn_More"><img src="assets/img/largerBut_03.png" alt="learn more"></a></div>
+              </div>
+              <div class="signUpBody">
+                <h2>Report a <br> Life Change</h2>
+                <div class="min"><img src="assets/img/mega.png" alt="megaphone"></div>
+                <div style="padding-bottom:32px">   <a href="http://info.healthconnect.vermont.gov/Report_Change"><img src="assets/img/largerBut_09.png" alt="report a change"></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="bannerLinks">
+            <div class="slide"><img src="assets/img/banner_01.png" style="padding-right:20px" alt="We're Here to Help. Call toll-free 855-899-9600"></div>
+            <div class="slide"><a href="http://info.healthconnect.vermont.gov/find"><img src="assets/img/banner_03.png" alt="find an assister"></a></div>
+            <div class="slide"><a href="http://info.healthconnect.vermont.gov/contact"><img src="assets/img/banner_04.png" alt="find answers"></a></div>
+          </div>
+          <div class="contentFooter">
+            <div class="slide">
+            	<div class="headerC">
+                <h2>Subsidy Estimator & Decision Tools</h2>
+              </div>
+              <div class="row content">
+                <div class="col"><img src="assets/img/cal.png"></div>
+                <div style="width:65%" class="col">
+                  <div class="copy"><b>Compare costs for different plan options <font size = "2">including monthly premiums, possible out-of-pocket costs and financial help available to lower costs.</font></b></div>
+                 <br><br><br>
+                </div>
+               <div> <a href="http://info.healthconnect.vermont.gov/tax_credit_calculator"><img src="assets/img/Try_Our_Decision_Tool.png" alt="Try Our Decision Tool"></a></div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="headerC">
+                <h2>Featured Videos</h2>
+              </div>
+              <div class="content">
+                <div style="padding-bottom:10px;" class="row">
+                  <div class="col one"><a href="http://info.healthconnect.vermont.gov/Learn_More"><img src="assets/img/video1.png" alt="video for Review"></a></div>
+                  <div class="col two">
+                    <p>Still in the <br>right plan?<br><a href="http://info.healthconnect.vermont.gov/Learn_More">WATCH "Review"</a></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col one"><a href="http://info.healthconnect.vermont.gov/Report_Change"><img src="assets/img/2-video.png" alt="Video for Changes"></a></div>
+                  <div class="col two">
+                    <p>Life changes <br>to report?<br><a href="http://info.healthconnect.vermont.gov/Report_Change">WATCH "Changes"</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="footerC"> </div>
+            </div>
+            <div class="slide two">
+              <div class="headerC">
+                <h2>Looking for <br>something else?</h2>
+              </div>
+              <div class="content">   
+                <ul> 
+                  <li class="alternativeLink"><a href="http://info.healthconnect.vermont.gov/Medicaid"><b>Green Mountain Care, Medicaid, <br>Dr. Dynasaur</b></a></li>
+                  <li class="alternativeLink"><a href="http://www.greenmountaincare.org/other-programs" ><b>Other public programs and benefits </b></a></li>
+                  <li class="alternativeLink"><a href="http://info.healthconnect.vermont.gov/exemption" ><b>How to apply for an exemption </b></a></li>
+                  <li class="alternativeLink"><a href="http://info.healthconnect.vermont.gov/faq" ><b>Tax filing, bill payment, and other FAQs</b></a></li>
+                  <li class="alternativeLink"><a href="https://www.healthcare.gov/if-i-have-medicare-do-i-need-to-do-anything/" ><b>Questions about Medicare?</b></a></li>
+                  <li class="alternativeLink"><a href="http://info.healthconnect.vermont.gov/paper" ><b>Paper applications</b></a></li>
+                  <li class="alternativeLink"><a href="http://info.healthconnect.vermont.gov/SB" ><b>Resources for small businesses</b></a></li>
+                </ul>
+              </div>
+              <div class="footerC"></div>
+            </div>
+          </div><!-- /Bottom Section -->                              
+        </div><!-- /Content -->
+      </div>
+    </div>
+    
+    <!--div style="font-size:20px"><br/>
+ 	  										Important Message: Vermont Health Connect's account log-ins will be unavailable from 8 p.m. EDT on Friday, August 10th until 8 a.m. EDT on Monday, August 13th due to a scheduled <a href="http://info.healthconnect.vermont.gov/maintenance" style="color:#FF9300"><u>system update</u>.</a> 
+ 	  										The Plan Comparison Tool and resources in the Help Center will continue to be available without interruption.
+              					</div-->
+	<div id="footer">
+      <div class="row">
+        <div class="container">
+          <div class="col left">
+            <p><a href="https://portal.healthconnect.vermont.gov/VTHBEWeb/idProof.action?og_link=Navigator"><img src="new_assets/img/but_assilog.jpg" alt="assister login"></a></p>
+            <p><a href="http://info.healthconnect.vermont.gov/privacy">Privacy Policy &middot;&nbsp;</a><a href="http://info.healthconnect.vermont.gov/TermsOfUse">Terms of Use</a></p>
+            <p><a href="http://www.vermont.gov/portal/policies/accessibility.php">Accessibility Policy &middot;&nbsp;</a>&copy Copyright 2015</p>
+          </div>         
+          <div class="col center"><a target="_blank" href="http://vermont.gov"><img src="assets/img/Vermont&#32;Gov&#32;Logo.png" alt="VDH Logo"></a><br><a href=" http://info.healthconnect.vermont.gov/BrowserCompatibility">Are you having trouble signing in?</a></div>
+          <div class="col left">
+            <div style="float:right">			 
+              <h3>Follow Us:</h3>
+              <ul>
+                <li>
+                	<a target="_blank" href="https://www.facebook.com/VermontHealthConnect">
+                		<img src="assets/img/social_01.png" alt="facebook">
+                	</a>
+                </li>
+                <li>
+               		<a target="_blank" href="https://twitter.com/vthealthconnect">
+                		<img src="assets/img/social_03.png" alt="twitter">
+                	</a>
+                </li>
+                <li>
+                	<a target="_blank" href="http://youtube.com/vthealthconnect">
+                		<img src="assets/img/social_05.png" alt="youtube">
+                	</a>
+                </li>
+              </ul>
+            </div>
+          </div>  
+          </div>       
+        <div  style="text-align: center; color: #ffffff; font-size: 13px">
+					<a href="http://info.healthconnect.vermont.gov/contact#languages">	
+						&#x0046;&#x0072;&#x0061;&#x006e;&#x00e7;&#x0061;&#x0069;&#x0073;	<span> - </span>
+						&#x0045;&#x0073;&#x0070;&#x0061;&#x00f1;&#x006f;&#x006c;	<span> - </span>
+						&#x0054;&#x0069;&#x1ebf;&#x006e;&#x0067 ;&#x0056;&#x0069;&#x1ec7;&#x0074;	<span> - </span>
+						&#x0928;&#x0947;&#x092a;&#x093e;&#x0932;&#x0940;	<span> - </span>
+						&#x0044;&#x0065;&#x0075;&#x0074;&#x0073;&#x0063;&#x0068;	<span> - </span>
+						&#x004f;&#x0072;&#x006f;&#x006f;&#x006d;&#x0069;&#x0066;&#x0066;&#x0061;	<span> - </span>
+						&#x0627;&#x0644;&#x0639;&#x0631;&#x0628;&#x064a;&#x0629;	<span> - </span>
+						&#x0420;&#x0443;&#x0441;&#x0441;&#x043a;&#x0438;&#x0439;	<span> - </span>
+						&#x0050;&#x006f;&#x0072;&#x0074;&#x0075;&#x0067;&#x0075;&#x00ea;&#x0073;	<span> - </span>
+						&#x65e5;&#x672c;&#x8a9e;	<span> - </span>
+						&#x7e41;&#x9ad4;&#x4e2d;&#x6587;	<span> - </span>
+						&#x0049;&#x0074;&#x0061;&#x006c;&#x0069;&#x0061;&#x006e;&#x006f;	<span> - </span>
+						&#x0053;&#x0072;&#x0070;&#x0073;&#x006b;&#x006f;&#x002d;&#x0068;&#x0072;&#x0076;&#x0061;&#x0074;&#x0073;&#x006b;&#x0069;	<span> - </span>
+						&#x0054;&#x0061;&#x0067;&#x0061;&#x006c;&#x006f;&#x0067;	<span> - </span>
+						&#x0e20;&#x0e32;&#x0e29;&#x0e32;&#x0e44;&#x0e17;&#x0e22;	
+					</a>
+				</div>
+      </div>
+</div>
+
+
+</body>
+</html>

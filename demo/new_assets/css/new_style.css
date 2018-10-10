@@ -1,0 +1,82 @@
+/* line 6, ../sass/new_style.scss */
+ul li.navLink:last-child:hover {
+  background: none; }
+/* line 10, ../sass/new_style.scss */
+ul li.navLink #logout {
+  float: right;
+  margin-right: 20px;
+  display: inline; }
+
+/* line 19, ../sass/new_style.scss */
+.div_but {
+  left: 53px;
+  position: absolute;
+  top: 98px; }
+
+/* line 24, ../sass/new_style.scss */
+#but_change.div_but {
+  left: 35px !important; }
+
+/* line 28, ../sass/new_style.scss */
+#LandingPageTop {
+  background: url("../img/main_background.jpg") no-repeat; }
+  /* line 30, ../sass/new_style.scss */
+  #LandingPageTop .signUp {
+    font-family: Helvetica;
+    color: #424242;
+    font-size: 19px;
+    font-weight: 100; }
+  /* line 36, ../sass/new_style.scss */
+  #LandingPageTop #FamilyCoverage, #LandingPageTop #EmployeeCoverage, #LandingPageTop #SmallBusinessCoverage {
+    left: 0;
+    top: 0; }
+    /* line 39, ../sass/new_style.scss */
+    #LandingPageTop #FamilyCoverage.signUp, #LandingPageTop #EmployeeCoverage.signUp, #LandingPageTop #SmallBusinessCoverage.signUp {
+      font-family: Helvetica;
+      color: #424242;
+      float: left;
+      font-size: 19px;
+      font-weight: 100;
+      height: 200px;
+      line-height: 25px;
+      margin-left: 9px;
+      margin-right: 2px;
+      margin-top: 184px;
+      padding: 10px;
+      position: relative;
+      text-align: center;
+      width: 309px; }
+  /* line 59, ../sass/new_style.scss */
+  #LandingPageTop #FamilyCoverageStartButton.StartHereBtn, #LandingPageTop #EmployeeCoverageStartButton.StartHereBtn, #LandingPageTop #SmallBusinessCoverageStartButton.StartHereBtn {
+    background: none;
+    bottom: 78px; }
+
+/* line 66, ../sass/new_style.scss */
+#LandingPageBottom #LandingPageLeft {
+  background: url("../img/back_here.jpg");
+  margin-left: -16px;
+  width: 507px;
+  height: 285px; }
+  /* line 71, ../sass/new_style.scss */
+  #LandingPageBottom #LandingPageLeft #NatalieNathanStartButton {
+    bottom: 38px;
+    height: 26px;
+    left: 270px; }
+  /* line 76, ../sass/new_style.scss */
+  #LandingPageBottom #LandingPageLeft .StartHereBtn {
+    background: none; }
+/* line 81, ../sass/new_style.scss */
+#LandingPageBottom #LandingPageTopRight {
+  background: url("../img/back_esti.jpg");
+  height: 101px;
+  width: 483px;
+  margin-right: 13px; }
+  /* line 86, ../sass/new_style.scss */
+  #LandingPageBottom #LandingPageTopRight a {
+    float: right;
+    margin-right: 10px;
+    margin-top: 50px;
+    position: relative; }
+/* line 93, ../sass/new_style.scss */
+#LandingPageBottom #LandingPageBottomRight {
+  margin-top: 10px; }

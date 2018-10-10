@@ -1,0 +1,191 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+<html >
+
+<head>
+  <title>Sign On</title>
+  <meta http-equiv="Content-type" content="text/html"/><meta http-equiv="Cache-Control" content="must-revalidate"/><meta
+    http-equiv="Cache-Control" content="no-store"/><meta http-equiv="Cache-Control" content="no-cache"/><meta
+    http-equiv="Cache-Control" content="private"/><meta http-equiv="Pragma" content="no-cache"/>
+    <meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=1;" />
+  
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="https://identity.id.vermont.gov/oaam_server/css/oaam_uio.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://identity.id.vermont.gov/oaam_server/client/vthbe/css/vthbeCustom.css">
+
+
+
+
+
+<script type="text/javascript" charset="UTF-8" language="javascript" src="https://identity.id.vermont.gov/oaam_server/js/oaam_uio.js"></script>
+
+
+<script type="text/javascript" charset="UTF-8">
+	loginIdRegExpr = /[^\s\\\<\>]/gi;
+	var app_messages = {
+							validateInvalidChars: "{0} has invalid characters.",
+							validateMinMaxLength: "Your answer should be {0}-{1} characters.",
+							validateDuplicateQuestion: "You can\u0027t select the same question again.",
+							validateEmptyAnswers: "Please enter the answer for question number(s)",
+							validateEmptyAnswer: "Please enter your answer.",
+							validateSelectQuestions: "Please select your questions.",
+							validatePasswordFormat: "Invalid password format.",
+							validatePasswordComplete: "Completed",
+							validatePasswordNotEntered: "Not entered.",
+							validateChallenge: "Please enter the answer."
+						};
+</script>
+
+
+  <script language="javascript" type="text/javascript" charset="UTF-8">
+    <!--
+
+    function validateFields() {
+      var returnVal = true;
+      var msg = "";
+    var elem = document.getElementById("userid");
+var userid = elem.value;
+userid = trimstring(userid);
+elem.value = userid;
+var loginIdLbl = "Username";
+if (userid == '') {
+alert("Please enter the Username.");
+elem.focus();
+return false;
+}
+if (!isValidLoginId(userid,loginIdLbl)) {
+elem.focus();
+return false;
+}
+
+      return returnVal;
+    }
+
+    // -->
+  </script>
+
+</head>
+
+<body>
+
+<div class="bharosaPage">
+  <HEAD>
+<!--IdcClientLoginForm=1-->
+</HEAD>
+<div class="imageheader" title="Welcome to VTHBE"><img style="Z-INDEX: -1; POSITION: absolute; TOP: 0px; LEFT: 0px" src="https://identity.id.vermont.gov/oaam_server/client/vthbe/images/VHCLogo186x73.png" alt="Welcome to VTHBE"/></div>
+<div style="z-index:1; top: 0px; left: 0px">
+
+
+  <div class="bharosaPageBody">
+
+    <div class="bharosaPageTitle">
+      
+    </div>
+
+    <div class="bharosaPageMessage">
+      <br><b>Check Your Browser Compatibility</b><br><a href="http://info.healthconnect.vermont.gov/BrowserCompatibility" target="_self"><u>Click here</u></a> to check your browser compatibility<br><br><b>Sign In</b><br>Please enter your user name below and click "Continue"<br>If you have not yet registered, <a href="https://identity.id.vermont.gov/identity/faces/register?&backUrl=https://portal.healthconnect.vermont.gov/VTHBELand" target="_self"><u>click here</u></a> to register
+    </div>
+    
+
+    
+
+    <div class="signOn" id="signOnCreds">
+      <form autocomplete="off" name="signon" id="signon" action="https://identity.id.vermont.gov/oaam_server/login.do" method="post"
+            onsubmit="javascript:return validateFields();">
+        <input type="hidden" id="clientOffset" name="clientOffset" />
+        <ul class="credsList">
+<li>
+<label for="userid">Username:</label>
+<input type="text" id="userid" name="userid" tabindex="1" maxlength="40" class="textInput" title="Enter Username" value="" autocomplete="off" /></li>
+</ul>
+        <input type="submit" class="loginButton"
+               value="Continue"/>
+        <ul class="links" id="linkList">
+<li><a href="javascript:infoWindow('wherepassword');" title="Where do I enter my password?" >Where do I enter my password?</a></li>
+<li><a href="https://identity.id.vermont.gov/identity/faces/forgotuserlogin?&backUrl=https://portal.healthconnect.vermont.gov/VTHBELand" title="Forgot your username?" >Forgot your username?</a></li>
+<li><a href="https://identity.id.vermont.gov/identity/faces/register?&backUrl=https://portal.healthconnect.vermont.gov/VTHBELand" title="Register" >Register</a></li>
+</ul>
+      </form>
+
+    </div>
+    <script language="javascript" type="text/javascript" charset="UTF-8">
+      <!--
+      document.signon.userid.focus();
+      
+      var time = new Date();
+      var offset = (time.getTimezoneOffset() / 60 * -1);
+      document.getElementById("clientOffset").value = offset;
+      
+      function advancePage(){};
+      // -->
+    </script>
+    
+          
+      <script type="text/javascript" charset="UTF-8" language="javascript" src="https://identity.id.vermont.gov/oaam_server/js/AC_OETags.js"></script>
+<script language="JavaScript" type="text/javascript" charset="UTF-8">
+           <!--
+           var hasReqestedVersion = DetectFlashVer(8, 0, 0);
+           if (hasReqestedVersion) {
+             var flashName = "/oaam_server/flash/bharosa8";
+             
+             AC_FL_RunContent(
+                   "src", flashName,
+                   "width", "1",
+                   "height", "1",
+                   "align", "middle",
+                   "id", "flash",
+                   "quality", "low",
+                   "bgcolor", "#FFFFFF",
+                   "name", "flash",
+                   "allowScriptAccess","sameDomain",
+                   "type", "application/x-shockwave-flash",
+                   "FlashVars", "dcPurp=uio");
+            }
+             //-->
+</script>
+    
+    
+  </div>
+  
+
+
+
+
+</div>
+<div class="footerText">Copyright © 2004, 2013, Oracle and/or its affiliates. All rights reserved.<br>Oracle is a registered trademark of Oracle Corporation and/or its affiliates. Other names may be trademarks of their respective owners.</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,813 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	min-width: 1200px;
+}
+
+a {
+	text-decoration:none;
+}
+a:link {
+	text-decoration:none;
+}
+a, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration:none;
+}
+
+img {
+	border: 0px;
+}
+
+.centeredDiv {
+	padding: 10px; 
+	height: 218px; 
+	display: table-cell; 
+	vertical-align: middle; 
+	text-align: center; 
+	border:0px solid yellow;
+}
+
+.alternativeLink a:visited {
+	color: inherit;
+	text-decoration:underline;	
+}
+.alternativeLink a:link {
+	text-decoration:underline;	
+}
+
+.BoxDropShadow {
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 4px 8px 4px #888;	
+}
+.BoxInnerDropShadow {
+	-moz-box-shadow:    inset 0 0 5px #888;
+   -webkit-box-shadow: inset 0 0 5px #888;
+   box-shadow:         inset 0 0 5px #888;
+}
+
+.hide {
+  display: none;
+}
+
+.banner {
+	width: 100%; 
+	height: 115px;
+	background: #67B3CA;
+	line-height: 115px; 
+	text-align: center; 
+	color: white; 
+	font-size: 40pt;
+	font-family: a_love_of_thunderregular, Helvetica, sans-serif;
+}
+
+#bannerContainer {
+	width:100%; 
+	height: 115px; 
+	background: #67B3CA; 
+	display: table; 
+	text-align: center;
+}
+
+#bannerContents {
+	display: table-cell; 
+	vertical-align: middle; 
+	text-align: center; 
+	color: white; 
+	font-size: 14pt; 
+	word-break:keep-all;
+	font-family: a_love_of_thunderregular, Helvetica, sans-serif;
+}
+
+.header {
+	position:relative;
+	width: 100%; 
+	height: 120px; 
+	border: 0px black solid; 
+	background: #EEEEEE url(../img/img/bkg_repeat_white.jpg) repeat; 
+}
+#headerCentred {
+	height: 100%; 
+	width: 1030px; 
+	margin:0 auto;
+}
+#headerLogo {
+	height: 100%; 
+	width: 240px; 
+	float: left;
+}
+#headerLinks {
+	height: 94px; 
+	width: 630px; 
+	float: right;
+}
+#headerLinkLeft{
+	width: 240px; 
+	float: left; 
+	border: 0px solid blue;
+}
+#headerLinkMid{
+	width: 240px; 
+	float: left;
+}
+#headerLinkRite {
+	width: 145px; 
+	height: 33px; 
+	line-height: 33px; 
+	vertical-align: middle; 
+	float: left;
+}
+.headerIcon {
+	float:left; 
+	margin-right: 4px;
+}
+.headerText {
+	font-size: 13px; 
+	color: #3C3C3C;
+}
+
+.footer {
+	position:relative;
+	width: 100%;
+	height: 104px;
+	border-top: 2px white solid;
+	background: #A0BAB1 url(../img/img/bkg_repeat_sage.jpg) repeat;
+	color: #3C3C3C;
+}
+
+.backgroundGradientLeft {
+	position: absolute; 
+	top: 0px; 
+	left: 0px; 
+	background: url(https://portal.healthconnect.vermont.gov/VTHBELand/img/img/bkg_gradient_left.png) repeat-y; 
+	height: 100%; 
+	width: 137px; 
+}
+.backgroundGradientRite {
+	position: absolute; 
+	top: 0px; 
+	right: 0px; 
+	background: url(https://portal.healthconnect.vermont.gov/VTHBELand/img/img/bkg_gradient_right.png) repeat-y; 
+	height: 100%; 
+	width: 137px
+}
+
+.navigation {
+	height: 26px; 
+	width: 780px; 
+	float: right;
+}
+.navLink:hover {
+	background: #BBBBBB;
+}
+.navigation ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 40px;
+}
+.navigation li {
+	display: inline;
+	padding-right: 10px;
+	padding-left: 10px;
+	border: 0px solid black;
+	padding-bottom: 7px;
+	padding-top: 6px;
+}
+
+.navigation a {
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+	color: #666666;
+	letter-spacing: 1px;
+}
+
+/* 
+		Main Landing Page 
+		=================
+		
+*/	
+
+#siteInfo {
+	border: 0px #67B3CA solid; 
+	width: 1025px; 
+	height: 60px; 
+	background: #A0BAB1 url(../img/img/bkg_repeat_sage.jpg) repeat;
+	margin:0 auto;	
+	line-height: 60px; 
+	text-align: center; 
+	color:white;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.LandingPageContents {
+	position:relative;
+	width: 100%; 
+	height: 100%; 
+	background: #A0BAB1 url(../img/img/bkg_repeat_sage.jpg) repeat;
+}
+
+#LandingPageTop {
+	height: 396px; 
+	width: 1050px; 
+	margin:0 auto; 
+	background: url(../img/img/AllImages.jpg) no-repeat;
+	position:relative;
+}
+#LandingPageTop #FamilyCoverage {
+	position: absolute; 
+	top: 268px; 
+	left: 26px; 
+	width:316px; 
+	height: 60px;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+#LandingPageTop #EmployeeCoverage {
+	position: absolute; 
+	top: 268px; 
+	left: 366px;
+	width:316px; 
+	height: 60px;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+#LandingPageTop #SmallBusinessCoverage {
+	position: absolute; 
+	top: 268px; 
+	left: 708px; 
+	width:316px; 
+	height: 60px;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#LandingPageTop #FamilyCoverageStartButton {
+	position: absolute;
+	bottom: 44px; 
+	left: 236px;
+	width:100px;; 
+	height: 26px;
+	padding-left: 5px; 
+	line-height: 26px;
+}
+#LandingPageTop #EmployeeCoverageStartButton {
+	position: absolute;
+	bottom: 44px; 
+	left: 578px; 
+	width:100px;; 
+	height: 26px;
+	padding-left: 5px; 
+	line-height: 26px;
+}
+#LandingPageTop #SmallBusinessCoverageStartButton {
+	position: absolute;
+	bottom: 44px; 
+	left: 920px;
+	width:100px;; 
+	height: 26px;
+	padding-left: 5px; 
+	line-height: 26px;
+}
+#LandingPageLeft #NatalieNathanStartButton {
+	position: absolute;
+	bottom: 30px; 
+	left: 290px;
+	width:100px;; 
+	height: 26px;
+	padding-left: 5px; 
+	line-height: 26px;
+}
+
+#LandingPageTop .StartHereBtn {
+	background: #C9D6D1 url(../img/img/ButtonStartOff.png);
+	font-size: 14px;	
+}
+#LandingPageTop .StartHereBtn:hover {
+	background: #C9D6D1 url(https://portal.healthconnect.vermont.gov/VTHBELand/img/img/ButtonStartOn.png);
+	cursor: pointer;
+}
+#LandingPageTop .StartHereBtn a {
+	color: #3c3c3c;
+}
+#LandingPageTop .StartHereBtn:hover a {
+	color: white;	
+}
+#LandingPageLeft .StartHereBtn {
+	background: #C9D6D1 url(../img/img/ButtonStartOff.png);
+	font-size: 14px;	
+}
+#LandingPageLeft .StartHereBtn:hover {
+	background: #C9D6D1 url(https://portal.healthconnect.vermont.gov/VTHBELand/img/img/ButtonStartOn.png);
+	cursor: pointer;
+}
+#LandingPageLeft .StartHereBtn a {
+	color: #3c3c3c;
+}
+#LandingPageLeft .StartHereBtn:hover a {
+	color: white;	
+}
+
+#VerticalSpacer {
+	height: 30px; 
+	width: 100%;
+}
+
+#LandingPageBottom {
+	position: relative;
+	height: 302px; 
+	width: 1002px; 
+	border: 0px black solid; 
+	margin:0 auto;
+}
+
+#LandingPageLeft {
+	height: 300px; 
+	width: 507px; 
+	border: 0px black solid; 
+	float: left; 
+	background: url(https://portal.healthconnect.vermont.gov/VTHBELand/img/img/home_NatalieNathan_photo.jpg)
+}
+#LandingPageLeft .BoxHeadline {
+	font-family: a_love_of_thunderregular, Helvetica, sans-serif;;
+	font-size:24px; 
+	font-weight: bold;
+	color:white;  
+	padding-left: 35px; 
+	padding-top:25px;
+}
+#LandingPageLeft .BoxContents {
+	font-size:16px; 
+	color:white; 
+	padding-left: 35px; 
+	padding-right: 20px; 
+	padding-top: 20px; 
+	line-height: 140%;
+}
+
+#LandingPageTopRight {
+	height: 112px; /* 148px; */ 
+	width: 495px; 
+	border: 0px black solid; 
+	float: right; 
+	background: url(https://portal.healthconnect.vermont.gov/VTHBELand/img/img/home_Plans_bkg.png) repeat;
+	color: #444444; 
+}
+#LandingPageBottomRight {
+	height: 190px; /*148px; */
+	width: 495px; 
+	border: 0px black solid; 
+	float: right;
+	background: url(../img/img/home_Benefits_bkg.png) repeat;
+	color:white; 
+}
+
+#LandingPageBottomRight li {
+	margin-bottom:6px;
+}
+
+#GreenMountainCarePage {
+	position:relative;
+	width: 100%; 
+}
+#GreenMountainCareContents {
+	width: 1040px; 
+	margin:0 auto;
+	background: white; /* #9ACEC9; */	
+}
+#GreenMountainCareTop {
+	position:relative;
+	width: 1040px;
+	height: 220px;
+	background: url(https://portal.healthconnect.vermont.gov/VTHBELand/img/img/GreenMountainCare.jpg) no-repeat;	
+}
+#GreenMountainCareTop .search {
+	position: absolute;
+	top: 10px; 
+	right: 10px;
+	width: 300px;
+	height: 40px;
+	border: 0px solid red; 
+}
+#GreenMountainCareMiddle {
+	position: relative; 
+	width: 1040px;
+	height: 490px;
+	background: white; /* #9ACEC9 */
+}
+
+/* 
+		Family Coverage Page 
+		====================
+		
+*/	
+#JellyContents {
+	position:relative;
+	width: 100%; 
+	height: 100%; 
+	background: #A0BAB1 url(../img/img/bkg_repeat_sage.jpg) repeat;
+}
+
+#FamilyCoveragePage, #SmallBusinessCoveragePage, #EmployeeCoveragePage, #AboutUsPage, #PrivacyPolicy, #ContactUsPage {
+	position:relative;
+	width: 100%; 
+	height: 800px; 
+	background: #A0BAB1 url(../img/img/bkg_repeat_sage.jpg) repeat;
+}
+#SmallBusinessCoverageContents, #FamilyCoverageContents, #EmployeeCoverageContents {
+	width: 1029px; 
+	margin:0 auto;
+}
+#AboutUsContents, #ContactUsContents {
+	position:relative;	
+	width: 1050px; 
+	margin: 0 auto;
+}
+
+#FamilyCoverageTopLeft {
+	position: relative;
+	width: 680px; 
+	height: 476px; 
+	float: left; 
+	background: url(https://portal.healthconnect.vermont.gov/VTHBELand/img/img/LP_IF_intro.jpg);
+}
+#FamilyCoverageTopLeft .BoxHeadline {
+	position: absolute;
+	top: 0px;
+	left: 340px;
+	width: 326px;
+	height: 213px; 
+}
+#FamilyCoverageTopLeft .BoxHeadline .BoxHeadlineTop {
+	width: auto; 
+	margin: 16px 28px 0px 20px;
+	font-size: 30px; 
+	font-weight: bold;
+	color: white;
+}
+#FamilyCoverageTopLeft .BoxHeadline .BoxHeadlineText {
+	width: auto; 
+	margin: 20px 20px 0px 20px;
+	font-size: 16px;
+	color: white;
+}
+#FamilyCoverageTopLeft .BoxContents {
+	width: 652px; 
+	height: 133px; 
+	float: left; 
+	padding-top: 40px;
+	position:absolute; 
+	left: 14px; 
+	top: 277px;
+}
+
+#FamilyCoverageTopRight, #SmallBusinessCoverageTopRight, #EmployeeCoverageTopRight {
+	position: relative;
+	width: 346px; 
+	height: 476px; 
+	float: left; 
+	background: url(https://portal.healthconnect.vermont.gov/VTHBELand/img/img/LP_Help_FullLength.jpg);
+}
+
+#FamilyCoverageTopRight .BoxHeadline, #SmallBusinessCoverageTopRight .BoxHeadline, #EmployeeCoverageTopRight .BoxHeadline {
+	position: absolute;
+	top: 213px;
+	left: 0px;
+	width: 346px;
+	height: 64px;
+	color: white;
+	font-size: 20px;
+}
+
+#FamilyCoverageTopRight .BoxHeadline div, #SmallBusinessCoverageTopRight .BoxHeadline div {	
+	width:auto; 
+	margin-left:40px; 
+	height: 64px; 
+	line-height: 64px; 		
+	font-size: 20px;
+	color: white;
+}
+
+#FamilyCoverageTopRight .BoxContents, #SmallBusinessCoverageTopRight .BoxContents, #EmployeeCoverageTopRight .BoxContents {
+	position: absolute;
+	top: 277px; 
+	left: 14px; 
+	width: 318px; 
+	float: left; 
+	color: white; 
+	line-height: 140%; 
+	font-size: 16px; 
+}
+#FamilyCoverageTopRight .BoxContents div, #SmallBusinessCoverageTopRight .BoxContents div {
+	width: auto; 
+	margin: 15px 30px 0px 30px;
+}
+#FamilyCoverageBottomLeft, #SmallBusinessCoverageBottomLeft {
+	width: 347px; 
+	height: 317px; 
+	float: left; 
+	background: url(https://portal.healthconnect.vermont.gov/VTHBELand/img/img/LP_DkGreenBox_lg.png)
+}
+#FamilyCoverageBottomLeft .IndentedBox {
+	width:auto; 
+	margin: 20px 30px 20px 30px;
+}
+#SmallBusinessCoverageBottomLeft .IndentedBox {
+	width:auto; 
+	margin: 40px 30px 20px 30px;
+}
+#FamilyCoverageBottomMid .IndentedBox {
+	width:auto; 
+	margin: 40px 30px 20px 30px;
+}
+#SmallBusinessCoverageBottomMid .IndentedBox {
+	width:auto; 
+	margin: 40px 30px 20px 30px;
+}
+
+#SmallBusinessCoverageBottomRight .IndentedBox {
+	text-align: center; 
+	color:#999; 
+	line-height: 317px;
+}
+#FamilyCoverageBottomLeft .BoxHeadline, #SmallBusinessCoverageBottomLeft .BoxHeadline {
+	font-size: 18px; 
+	letter-spacing: 1px;
+	color: white;
+	line-height: 140%;
+	font-weight: bold;
+}
+#FamilyCoverageBottomLeft #DateTicker, #SmallBusinessCoverageBottomLeft .BoxContents {
+	font-size: 14px; 
+	letter-spacing: 1px;
+	color: white;
+	line-height: 140%;
+}
+#FamilyCoverageBottomMid, #SmallBusinessCoverageBottomMid {
+	width: 333px; 
+	height: 317px; 
+	float: left; 
+	background: url(https://portal.healthconnect.vermont.gov/VTHBELand/img/img/LP_LtBlueBox_lg.png);
+}
+#FamilyCoverageBottomMid .BoxHeadline, #SmallBusinessCoverageBottomMid .BoxHeadline {
+	font-size: 16px; 
+	color: #0C4B44;
+	letter-spacing: 1px;	
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+#FamilyCoverageBottomMid .BoxContents, #SmallBusinessCoverageBottomMid .BoxContents {
+	font-size:14px; 
+	color: #5A5D5E;
+	letter-spacing: 1px;
+	line-height: 100%;	
+}
+#SmallBusinessCoverageBottomRight {
+	width: 346px; 
+	height: 317px; 
+	float: left; 
+	background: url(https://portal.healthconnect.vermont.gov/VTHBELand/img/img/LP_JellyVision_lg.png);
+}
+#FamilyCoverageBottomRight {
+	display: table;
+	overflow: hidden;
+	width: 346px; 
+	height: 317px; 
+	float: left; 
+	background: url(https://portal.healthconnect.vermont.gov/VTHBELand/img/img/LP_JellyVision_lg.png);
+} 
+#FamilyCoverageBottomRight .IndentedBox {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: #999;
+}
+/* 
+		Small Business Coverage Page 
+		============================
+		
+*/	
+
+#SmallBusinessCoverageTopLeft {
+	position: relative;
+	width: 680px; 
+	height: 476px; 
+	float: left; 
+	background: url(https://portal.healthconnect.vermont.gov/VTHBELand/img/img/LP_SB_intro.jpg);
+}
+#SmallBusinessCoverageTopLeft .BoxHeadline {
+	position: absolute;
+	top: 0px;
+	left: 340px;
+	width: 326px;
+	height: 213px; 
+}
+#SmallBusinessCoverageTopLeft .BoxContents {
+	position:absolute; 
+	top: 277px;
+	left: 14px; 
+	width: 100%; 
+	height: 133px; 
+}
+#SmallBusinessCoverageTopLeft .BoxHeadline .BoxHeadlineTop {
+	width: auto; 
+	margin: 16px 28px 0px 20px;
+	font-size: 30px; 
+	font-weight: bold;
+	color: white;
+}
+#SmallBusinessCoverageTopLeft .BoxHeadline .BoxHeadlineText {
+	width: auto; 
+	margin: 20px 20px 0px 20px;
+	font-size: 16px;
+	color: white;
+}
+#SmallBusinessCoverageTopLeft .BoxContents {
+	width: 652px; 
+	height: 133px; 
+	float: left; 
+	padding-top: 40px;
+}
+
+/* 
+		Employee Coverage Page 
+		======================
+		
+*/	
+#EmployeeCoverageTopLeft {
+	position: relative;
+	width: 680px; 
+	height: 476px; 
+	float: left; 
+	background: url(https://portal.healthconnect.vermont.gov/VTHBELand/img/img/LP_E_intro.jpg);
+}
+#EmployeeCoverageTopLeft .BoxHeadline {
+	position: absolute;
+	top: 0px;
+	left: 340px;
+	width: 326px;
+	height: 213px; 
+}
+#EmployeeCoverageTopLeft .BoxHeadline .BoxHeadlineTop {
+	width: auto; 
+	margin: 16px 28px 0px 20px;
+	font-size: 30px; 
+	font-weight: bold;
+	color: white;
+}
+#EmployeeCoverageTopLeft .BoxHeadline .BoxHeadlineText {
+	width: auto; 
+	margin: 20px 20px 0px 20px;
+	font-size: 16px;
+	color: white;
+}
+#EmployeeCoverageTopLeft .BoxContents {
+	width: 652px; 
+	height: 133px; 
+	float: left; 
+	padding-top: 40px;
+}
+
+#EmployeeCoverageBottomLeft {
+	position: relative;
+	width: 347px; 
+	height: 156px; 
+	float: left; 
+	background: url(https://portal.healthconnect.vermont.gov/VTHBELand/img/img/LP_DkGreenBox_sm.png);
+}
+#EmployeeCoverageBottomLeft .IndentedBox {
+	width:auto; 
+	margin: 20px 30px 20px 30px;
+}
+#EmployeeCoverageBottomLeft .BoxHeadline {
+	font-size: 20px; 
+	letter-spacing: 1px;
+	color: white;
+	line-height: 140%;
+	font-weight: bold;
+}
+#EmployeeCoverageBottomLeft .BoxContents {
+	margin-top: 10px;
+	font-size: 12px; 
+	letter-spacing: 1px;
+	color: white;
+	line-height: 140%;
+	font-weight: bold;
+}
+#EmployeeCoverageBottomMid {
+	position: relative;
+	width: 333px; 
+	height: 156px; 
+	float: left; 
+	background: url(https://portal.healthconnect.vermont.gov/VTHBELand/img/img/LP_LtBlueBox_sm.png)
+}
+#EmployeeCoverageBottomMid .IndentedBox {
+	width:auto; 
+	margin: 30px 30px 20px 30px;
+}
+#EmployeeCoverageBottomMid .BoxHeadline {
+	font-size: 16px; 
+	color: #0C4B44;
+	letter-spacing: 1px;	
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+#EmployeeCoverageBottomMid .BoxContents {
+	font-size:14px; 
+	color: #5A5D5E;
+	letter-spacing: 1px;
+	line-height: 100%;	
+}
+#EmployeeCoverageBottomMid .BoxContents a:link, a:visited, a:active {
+	color: #5A5D5E;
+}
+#EmployeeCoverageBottomRight {
+	position: relative;
+	width: 346px; 
+	height: 156px; 
+	line-height: 156px;
+	float: left; 
+	background: url(https://portal.healthconnect.vermont.gov/VTHBELand/img/img/LP_JellyVision_sm.png)
+}
+#EmployeeCoverageBottomRight .IndentedBox {
+	text-align: center; 
+	color:#999;
+}
+
+/*
+		Popups
+		======
+*/
+#smallBusinessPopup {
+	width:400px; 
+	height:200px; 
+	overflow:auto; 
+	font-size: 14px;	
+}
+#employeePopup01 {
+	width:400px; 
+	height:120px; 
+	overflow:auto; 
+	font-size:14px;
+}
+#employeePopup02 {
+	width:400px; 
+	height:290px; 
+	overflow:auto; 
+	font-size: 14px;
+}
+
+/*
+		General Stuff for all Landing Pages
+		===================================
+		
+*/
+.BoxLogin {
+	position: absolute;
+	top: 213px;
+	left: 340px;
+	width: 326px;
+	height: 64px;
+	background: url(https://portal.healthconnect.vermont.gov/VTHBELand/img/img/LP_LoginBox.jpg);
+}
+.BoxLogin:hover {
+	background: url(https://portal.healthconnect.vermont.gov/VTHBELand/img/img/LP_LoginBox_hover.jpg);
+	cursor: pointer;
+}
+.BoxLogin div {
+	width:auto; 
+	margin-left:40px; 
+	height: 64px; 
+	line-height: 64px; 		
+	font-size: 20px;
+	color: white;
+}
+.backtotop {
+    border-top: 1px solid #DFE2EC;
+    margin: 15px 0 0;
+    padding: 0;
+    text-align: right;
+}
+
+#imgRotater {
+	height: 94px; /*94px; */ 
+	width: 230px; 
+	background: #FFFFFF; 
+	float: right; 
+	margin: 3px 30px 3px 10px; /* 20px 30px 20px 10px; */
+}
+.insuranceProviders {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
+	padding-left: 15px; 
+	padding-top: 7px; 
+	cursor:pointer;
+}
