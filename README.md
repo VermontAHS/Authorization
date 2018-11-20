@@ -7,6 +7,24 @@ A prototype authentication and authorization service
 
 This is a prototype service for building a desired "to be" single interface for other applications and services to authorize and authenticate users.  The future state of this service will allow a variety of different authentication and identity services behind the scenes while all new application development will authenticate with this REST URL pattern.  This will help obfuscate the risk associated with leveraging multiple, platform specific authentication and identity providers.
 
+# Exploring Open Source Auth Platforms
+
+## LemonLDAP NG
+
+[LemonLDAP NG](https://gitlab.ow2.org/lemonldap-ng/lemonldap-ng/tree/master) is an open source identity access and management platform which leverages open standards to create single sign on experience.
+
+### PreReqs
+
+- For local development, install [Docker Desktop](https://www.docker.com/products/docker-desktop)
+
+
+### Getting Started
+
+- See the [`lemonldap-ng/README.md`](lemonldap-ng/README.md) to run the server locally.
+
+
+# Exploring Custom Auth API Enpoints
+
 ## Prereqs
 
 This project relies on [Node.js](https://nodejs.org/en/) and is currently using v8.12.0 LTS.  Follow the instructions on how to install Node.js for your operating system.
