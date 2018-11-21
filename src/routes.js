@@ -14,4 +14,8 @@ routes.get('/users', middleware.getUsers);
 
 routes.post('/signin', middleware.signIn);
 
+routes.get('/', (req, res) => res.render('home'));
+
+routes.get('/login', (req, res) => res.render('home'));
+
 module.exports = routes

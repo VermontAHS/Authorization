@@ -1,0 +1,19 @@
+body {
+  font-family: "Lato",Verdana,Tahoma,"DejaVu Sans",sans-serif;
+}
+
+.vt-colors {
+  background-color: #030;
+  padding: 10px;
+}
+
+.vt-colors header {
+  color: #fff;
+}
+
+.vt-header-text {
+  font-size: 12.6px;
+  font-weight: 300;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+}
