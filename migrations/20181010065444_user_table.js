@@ -11,14 +11,8 @@ exports.up = (knex, Promise) => {
     table.string('password');
     table.timestamp('created_at').defaultTo(knex.fn.now());
   })
-  .then(event => {
-    console.log(event)
-  })
 };
 
 exports.down = (knex, Promise) => {
   return knex.schema.dropTable('users')
-    .then(event => {
-      console.log(event);
-    })
 };

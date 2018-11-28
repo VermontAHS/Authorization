@@ -18,4 +18,4 @@ routes.get('/', (req, res) => res.render('home'));
 
 routes.get('/login', (req, res) => res.render('home'));
 
-module.exports = routes
+module.exports = routes;
