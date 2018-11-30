@@ -42,7 +42,16 @@ const authenticateUser = params => {
       return bcrypt.compare(params.password, result.password).then(verified => {
         if (!verified) return verified;
 
-        return result;
+        return {
+          id: result.id,
+          first_name: result.first_name,
+          last_name: result.last_name,
+          mi: result.mi,
+          suffix: result.suffix,
+          username: result.username,
+          email: result.email,
+          created_at: result.created_at,
+        };
       });
     });
   });
@@ -87,7 +96,16 @@ const getByUserId = id => {
     .where({ id: id })
     .then(result => {
       if (result.length === 0) return {};
-      return result[0];
+      return {
+        id: result[0].id,
+        first_name: result[0].first_name,
+        last_name: result[0].last_name,
+        mi: result[0].mi,
+        suffix: result[0].suffix,
+        username: result[0].username,
+        email: result[0].email,
+        created_at: result[0].created_at,
+      };
     });
 };
 

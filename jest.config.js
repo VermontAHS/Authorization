@@ -1,4 +1,5 @@
 module.exports = {
   coverageReporters: ["text"],
-  roots: ["<rootDir>/src/"]
+  roots: ["<rootDir>/src/"],
+  testEnvironment: "node"
 };
