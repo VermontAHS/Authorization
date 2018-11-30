@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express();
-const db = require('./db');
 const passport = require('./passport');
 
 router.post('/login', passport.authenticate('local'), (req, res) => {

@@ -18,14 +18,14 @@ describe('DB Tests', () => {
   beforeAll(done => {
     return client.migrate
       .latest()
-      .then(res => done())
+      .then(() => done())
       .catch(err => done(err));
   });
 
   afterAll(done => {
     return client('users')
       .truncate()
-      .then(res => done())
+      .then(() => done())
       .catch(err => done(err));
   });
 
@@ -33,14 +33,14 @@ describe('DB Tests', () => {
     beforeAll(done => {
       return client('users')
         .insert(user)
-        .then(res => done())
+        .then(() => done())
         .catch(err => done(err));
     });
 
     afterAll(done => {
       return client('users')
         .truncate()
-        .then(res => done())
+        .then(() => done())
         .catch(err => done(err));
     });
 
@@ -121,21 +121,21 @@ describe('DB Tests', () => {
     beforeAll(done => {
       return db
         .createUser(user)
-        .then(res => done())
+        .then(() => done())
         .catch(err => done(err));
     });
 
     afterAll(done => {
       return client('users')
         .truncate()
-        .then(res => done())
+        .then(() => done())
         .catch(err => done(err));
     });
 
     it('should have created a user', done => {
       return client('users')
         .where({ username: user.username })
-        .then(res => {
+        .then((res) => {
           expect(res[0].username).toBe(user.username);
           done();
         });
@@ -189,14 +189,14 @@ describe('DB Tests', () => {
     beforeAll(done => {
       return client('users')
         .insert(user)
-        .then(res => done())
+        .then(() => done())
         .catch(err => done(err));
     });
 
     afterAll(done => {
       return client('users')
         .truncate()
-        .then(res => done())
+        .then(() => done())
         .catch(err => done(err));
     });
 
@@ -221,7 +221,7 @@ describe('DB Tests', () => {
 
     it('should get a user by id', done => {
       const id = 1;
-      return db.getByUserId(1).then(res => {
+      return db.getByUserId(id).then(res => {
         expect(res.first_name).toBe(user.first_name);
         expect(res.last_name).toBe(user.last_name);
         expect(res.mi).toBe(user.mi);
@@ -244,14 +244,14 @@ describe('DB Tests', () => {
     beforeEach(done => {
       return client('users')
         .insert(user)
-        .then(res => done())
+        .then(() => done())
         .catch(err => done(err));
     });
 
     afterEach(done => {
       return client('users')
         .truncate()
-        .then(res => done())
+        .then(() => done())
         .catch(err => done(err));
     });
 
@@ -321,14 +321,14 @@ describe('DB Tests', () => {
     beforeEach(done => {
       return client('users')
         .insert(user)
-        .then(res => done())
+        .then(() => done())
         .catch(err => done(err));
     });
 
     afterEach(done => {
       return client('users')
         .truncate()
-        .then(res => done())
+        .then(() => done())
         .catch(err => done(err));
     });
 

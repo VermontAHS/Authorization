@@ -2,7 +2,7 @@ const knex = require('knex');
 const config = require('../knexfile');
 const client = knex(config.development);
 
-module.exports.createUser = (req, res, next) => {
+module.exports.createUser = (req, res) => {
   return client('users')
     .insert({
       username: req.body.username,
@@ -13,7 +13,7 @@ module.exports.createUser = (req, res, next) => {
       email: req.body.email,
       password: req.body.password,
     })
-    .then(result => {
+    .then(() => {
       return res.send(req.body.username);
     })
     .catch(err => {
@@ -25,7 +25,7 @@ module.exports.deleteUser = (req, res) => {
   return client('users')
     .where({ id: req.params.id })
     .del()
-    .then(result => {
+    .then(() => {
       return res.send(req.params.id);
     })
     .catch(err => {
@@ -69,7 +69,7 @@ module.exports.updateUser = (req, res) => {
   return client('users')
     .where({ id: req.params.id })
     .update(req.body)
-    .then(result => {
+    .then(() => {
       return res.send(req.params.id);
     })
     .catch(err => {

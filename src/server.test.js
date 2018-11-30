@@ -1,6 +1,5 @@
 const request = require('supertest');
 const knex = require('knex');
-const bcrypt = require('bcrypt');
 const server = require('./server');
 const db = require('./db');
 const config = require('../knexfile');
@@ -37,14 +36,14 @@ describe('API Routes', () => {
   beforeAll(done => {
     return client.migrate
       .latest()
-      .then(res => done())
+      .then(() => done())
       .catch(err => done(err));
   });
 
   afterAll(done => {
     return client('users')
       .truncate()
-      .then(res => done())
+      .then(() => done())
       .catch(err => done(err));
   });
 
@@ -52,14 +51,14 @@ describe('API Routes', () => {
     beforeAll(done => {
       return db
         .createUser(user)
-        .then(res => done())
+        .then(() => done())
         .catch(err => done(err));
     });
 
     afterAll(done => {
       return client('users')
         .truncate()
-        .then(res => done())
+        .then(() => done())
         .catch(err => done(err));
     });
 
@@ -88,7 +87,7 @@ describe('API Routes', () => {
         .set('Accept', 'application/json')
         .send({ username: username, password: password })
         .expect(401)
-        .then(res => done());
+        .then(() => done())
     });
   });
 
@@ -99,20 +98,20 @@ describe('API Routes', () => {
     beforeAll(done => {
       return db
         .createUser(user)
-        .then(res => {
+        .then(() => {
           return agent
             .post('/api/login')
             .set('Accept', 'application/json')
             .send({ username: user.username, password: user.password });
         })
-        .then(res => done())
+        .then(() => done())
         .catch(err => done(err));
     });
 
     afterAll(done => {
       return client('users')
         .truncate()
-        .then(res => done())
+        .then(() => done())
         .catch(err => done(err));
     });
 
@@ -132,7 +131,7 @@ describe('API Routes', () => {
         .post('/api/logout')
         .set('Accept', 'application/json')
         .expect(404)
-        .then(res => done());
+        .then(() => done())
     });
   });
 
@@ -143,15 +142,15 @@ describe('API Routes', () => {
     beforeAll(done => {
       return db
         .createUser(user)
-        .then(res => createSession(agent, user))
-        .then(res => done())
+        .then(() => createSession(agent, user))
+        .then(() => done())
         .catch(err => done(err));
     });
 
     afterAll(done => {
       return client('users')
         .truncate()
-        .then(res => done())
+        .then(() => done())
         .catch(err => done(err));
     });
 
