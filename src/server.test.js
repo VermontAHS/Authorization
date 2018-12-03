@@ -87,7 +87,7 @@ describe('API Routes', () => {
         .set('Accept', 'application/json')
         .send({ username: username, password: password })
         .expect(401)
-        .then(() => done())
+        .then(() => done());
     });
   });
 
@@ -131,7 +131,7 @@ describe('API Routes', () => {
         .post('/api/logout')
         .set('Accept', 'application/json')
         .expect(404)
-        .then(() => done())
+        .then(() => done());
     });
   });
 

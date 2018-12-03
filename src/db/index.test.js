@@ -135,7 +135,7 @@ describe('DB Tests', () => {
     it('should have created a user', done => {
       return client('users')
         .where({ username: user.username })
-        .then((res) => {
+        .then(res => {
           expect(res[0].username).toBe(user.username);
           done();
         });
