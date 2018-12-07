@@ -2,18 +2,12 @@ const knex = require('knex');
 const bcrypt = require('bcrypt');
 const db = require('./');
 const config = require('../../knexfile');
-const user = {
-  username: 'testuser',
-  first_name: 'first',
-  last_name: 'last',
-  mi: 'm',
-  suffix: 'Mr',
-  email: 'email@example.com',
-  password: 'password',
-};
+const User = require('../testHelpers/factories').User;
 
 describe('DB Tests', () => {
   const client = knex(config.test);
+  const user = User.build();
+  const notUser = User.build();
 
   beforeAll(done => {
     return client.migrate
@@ -44,42 +38,36 @@ describe('DB Tests', () => {
         .catch(err => done(err));
     });
 
-    it('should not have email that exists', done => {
-      const email = 'test@example.com';
-      return db.emailExists(email).then(res => {
+    it("should not have an email that doesn't exist", done => {
+      return db.emailExists(notUser.email).then(res => {
         expect(res).toBe(false);
         done();
       });
     });
 
     it('should have email that exists', done => {
-      const email = 'email@example.com';
-      return db.emailExists(email).then(res => {
+      return db.emailExists(user.email).then(res => {
         expect(res).toBe(true);
         done();
       });
     });
 
-    it('should not have username that exists', done => {
-      const username = 'notuser';
-      return db.usernameExists(username).then(res => {
+    it("should not have username that doesn't exists", done => {
+      return db.usernameExists(notUser.username).then(res => {
         expect(res).toBe(false);
         done();
       });
     });
 
     it('should have username that exists', done => {
-      const username = 'testuser';
-      return db.usernameExists(username).then(res => {
+      return db.usernameExists(user.username).then(res => {
         expect(res).toBe(true);
         done();
       });
     });
 
     it('should return object with username and email are true', done => {
-      const email = 'email@example.com';
-      const username = 'testuser';
-      return db.doesExist(email, username).then(res => {
+      return db.doesExist(user.email, user.username).then(res => {
         expect(res.email).toBe(true);
         expect(res.username).toBe(true);
         done();
@@ -87,9 +75,7 @@ describe('DB Tests', () => {
     });
 
     it('should return object with username and email are false', done => {
-      const email = 'not@example.com';
-      const username = 'notuser';
-      return db.doesExist(email, username).then(res => {
+      return db.doesExist(notUser.email, notUser.username).then(res => {
         expect(res.email).toBe(false);
         expect(res.username).toBe(false);
         done();
@@ -97,9 +83,7 @@ describe('DB Tests', () => {
     });
 
     it('should return object with username true and email false', done => {
-      const email = 'not@example.com';
-      const username = 'testuser';
-      return db.doesExist(email, username).then(res => {
+      return db.doesExist(notUser.email, user.username).then(res => {
         expect(res.email).toBe(false);
         expect(res.username).toBe(true);
         done();
@@ -107,9 +91,7 @@ describe('DB Tests', () => {
     });
 
     it('should return object with username false and email true', done => {
-      const email = 'email@example.com';
-      const username = 'notuser';
-      return db.doesExist(email, username).then(res => {
+      return db.doesExist(user.email, notUser.username).then(res => {
         expect(res.email).toBe(true);
         expect(res.username).toBe(false);
         done();
@@ -163,7 +145,7 @@ describe('DB Tests', () => {
     it('should not authenticate a user with wrong password', done => {
       const params = {
         username: user.username,
-        password: 'notpassword',
+        password: notUser.password,
       };
 
       return db.authenticateUser(params).then(res => {
@@ -174,8 +156,8 @@ describe('DB Tests', () => {
 
     it('should not authenticate not a user', done => {
       const params = {
-        username: 'not user',
-        password: 'notpassword',
+        username: notUser.username,
+        password: notUser.password,
       };
 
       return db.authenticateUser(params).then(res => {
@@ -282,7 +264,7 @@ describe('DB Tests', () => {
         last_name: 'updated last',
       };
 
-      return db.updateUserDetails('notuser', updated).then(res => {
+      return db.updateUserDetails(notUser.username, updated).then(res => {
         expect(res).toBe(false);
         done();
       });
@@ -307,13 +289,14 @@ describe('DB Tests', () => {
     });
 
     it('should not update user password with wrong username', done => {
-      const username = 'notuser';
       const updatedPassword = 'newpassword';
 
-      return db.updateUserPassword(username, updatedPassword).then(res => {
-        expect(res).toBe(false);
-        done();
-      });
+      return db
+        .updateUserPassword(notUser.username, updatedPassword)
+        .then(res => {
+          expect(res).toBe(false);
+          done();
+        });
     });
   });
 
