@@ -59,7 +59,7 @@
     },
     "env": {},
       "overrides": [{
-        "files": "**/*.test.js",
+        "files": ["**/*.test.js", "src/testHelpers/*.js"],
         "rules": {
             "node/no-unpublished-require": 0,
             "node/no-missing-require": 0

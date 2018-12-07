@@ -3,35 +3,13 @@ const knex = require('knex');
 const server = require('./server');
 const db = require('./db');
 const config = require('../knexfile');
-const user = {
-  username: 'testuser',
-  first_name: 'first',
-  last_name: 'last',
-  mi: 'm',
-  suffix: 'Mr',
-  email: 'email@example.com',
-  password: 'password',
-};
-
-const createSession = (agent, userinfo) => {
-  return agent
-    .post('/api/login')
-    .send({
-      username: userinfo.username,
-      password: userinfo.password,
-    })
-    .expect(200)
-    .then(res => {
-      const cookie = res.headers['set-cookie'][0]
-        .split(',')
-        .map(item => item.split(';')[0]);
-
-      agent.jar.setCookies(cookie);
-    });
-};
+const createSession = require('./testHelpers/utils').createSession;
+const User = require('./testHelpers/factories').User;
 
 describe('API Routes', () => {
   const client = knex(config.test);
+  const user = User.build();
+  const notUser = User.build();
 
   beforeAll(done => {
     return client.migrate
@@ -79,13 +57,11 @@ describe('API Routes', () => {
 
     it('should not login a non user', done => {
       const agent = request(server);
-      const username = 'not a user';
-      const password = 'notpassword';
 
       agent
         .post('/api/login')
         .set('Accept', 'application/json')
-        .send({ username: username, password: password })
+        .send({ username: notUser.username, password: notUser.password })
         .expect(401)
         .then(() => done());
     });
