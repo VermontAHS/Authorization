@@ -13,7 +13,7 @@ const user = {
   password: 'password',
 };
 
-function createSession(agent, userinfo) {
+const createSession = (agent, userinfo) => {
   return agent
     .post('/api/login')
     .send({
@@ -28,7 +28,7 @@ function createSession(agent, userinfo) {
 
       agent.jar.setCookies(cookie);
     });
-}
+};
 
 describe('API Routes', () => {
   const client = knex(config.test);

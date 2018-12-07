@@ -3,7 +3,7 @@ const Strategy = require('passport-local').Strategy;
 const db = require('./db');
 
 passport.use(
-  new Strategy(function(username, password, done) {
+  new Strategy((username, password, done) => {
     return db
       .authenticateUser({ username: username, password: password })
       .then(result => done(null, result))
@@ -11,11 +11,11 @@ passport.use(
   })
 );
 
-passport.serializeUser(function(user, done) {
+passport.serializeUser((user, done) => {
   done(null, user.id);
 });
 
-passport.deserializeUser(function(id, done) {
+passport.deserializeUser((id, done) => {
   return db.getByUserId(id).then(result => done(null, result));
 });
 
